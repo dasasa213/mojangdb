@@ -33,3 +33,4 @@ echo json_encode($data);
 
 // MySQLとの接続を切断する
 $mysqli->close();
+?>
