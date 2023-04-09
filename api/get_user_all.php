@@ -24,7 +24,7 @@ if (!$result) {
 // 結果を連想配列で取得する
 $data = array();
 while ($row = $result->fetch_assoc()) {
-    $data[] = $row;
+    $data[$row['userid']] = $row['username'];
 }
 
 // 結果をJSON形式で返す
